@@ -2,4 +2,4 @@
 Developers
 ==========
 
-* nithinivi <nithinnivi@gmail.com>
+* nithin  <nithinnivi@gmail.com>
