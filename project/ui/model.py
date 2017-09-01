@@ -6,7 +6,8 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtWidgets
+from pyqtgraph import PlotWidget
 
 
 class Ui_MainWindow(object):
@@ -97,9 +98,6 @@ class Ui_MainWindow(object):
             self.tabWidget.indexOf(self.generalTAb),
             _translate("MainWindow", "Tab 1"))
         self.plotCtrl.setTitle(_translate("MainWindow", "Plot Control"))
-
-
-from pyqtgraph import PlotWidget
 
 if __name__ == "__main__":
     import sys

@@ -1,3 +1,4 @@
+import codecs
 import serial
 import serial.tools.list_ports as serialTool
 
@@ -29,13 +30,13 @@ class SerialBoard:
     def read_port(self):
         if self.port is not None:
             try:
-                return self.ser.readline()
+                return codecs.decode((self.ser.readline()), 'ascii')
             except Exception:
                 pass  # TODO: serialexpection
 
     def str_port(self):
         if self.port is not None:
-            return str(self.ser.readline())
+            return self.ser.readline()
 
     def __call__(self, *args, **kargs):
         self.open_port(self)
